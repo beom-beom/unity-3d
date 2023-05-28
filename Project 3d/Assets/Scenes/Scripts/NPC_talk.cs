@@ -32,14 +32,14 @@ public class NPC_talk : MonoBehaviour
     {
         dialogue = new String[100];
         // 처음 intro 대사
-        dialogue[0] = "안녕하세요 " +playerName+"님"+"  반가워요";
-        dialogue[1] = playerName+"님 현재 마을에는 드래곤이 습격해왔습니다.";
+        dialogue[0] = "안녕하세요 " + playerName+ " 님"+"  반가워요";
+        dialogue[1] = playerName +" 님 현재 마을에는 드래곤이 습격해왔습니다.";
         dialogue[2] = "현재 드래곤은 마을 수뇌부에 자리를 잡고 있습니다.";
         dialogue[3] = "부디 드래곤을 잡아 마을을 구원해주세요.....";
-        dialogue[4] = "하지만 현재"+playerName+"님은 아직 드래곤과 대적하기엔 부족하신 것 같습니다.";
-        dialogue[5] = "드래곤과 싸우기 위해 구축해놓은 훈련장을 통해"+playerName+"님 성장을 돕겠습니다.";
+        dialogue[4] = "하지만 현재 "+ playerName +"님은 아직 드래곤과 대적하기엔 부족하신 것 같습니다.";
+        dialogue[5] = "드래곤과 싸우기 위해 구축해놓은 훈련장을 통해 " + playerName +"님 성장을 돕겠습니다.";
         dialogue[6] = "훈련장을 포탈을 통해 입장하실 수 있습니다.";
-        dialogue[7] = "그럼"+playerName+"님의 무운을 빕니다 ...";
+        dialogue[7] = "그럼 "+ playerName +"님의 무운을 빕니다 ...";
         dialogue[8] = "부디 드래곤을 물리쳐 마을을 구해주세요 !!!";
         // 대화 끝에 null을 넣어서 대화가 끝났음을 알린다.
         dialogue[9] = "";

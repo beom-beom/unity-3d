@@ -12,6 +12,8 @@ TagManager:
   - Mummy
   - Mush
   - portal
+  - DialogPanel
+  - End
   layers:
   - Default
   - TransparentFX

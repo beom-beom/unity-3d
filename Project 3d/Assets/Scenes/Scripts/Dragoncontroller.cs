@@ -17,7 +17,6 @@ public class Dragoncontroller : MonoBehaviour
     private  GameObject player;
     HealthSystemForDummies healthSystem;
     private bool cmt = true;
-
     private HealthSystemForDummies playerhealthSystem;
     private int acummulatedamage=0;
     public void TakeDamage(int damage, Vector3 hitDirection)
@@ -51,8 +50,12 @@ public class Dragoncontroller : MonoBehaviour
     {
         yield return new WaitForSeconds(3.0f);
     }
+    private void settingbool()
+    {
+        GameObject.Find("End").GetComponent<end_scrpit>().dragon_dead = false;
 
-public void PlayerTarget()
+    }
+    public void PlayerTarget()
 {
 
     if ((playerhealthSystem.CurrentHealth != 0))
@@ -68,9 +71,10 @@ public void PlayerTarget()
         if (healthSystem.CurrentHealth <= 0)
         {
             anim.SetTrigger("die");
+                Invoke("settingbool", 2.0f);       
             Destroy(gameObject, 2.1f);
         }
-        else if (distance >= 20 && distance < 120)
+        else if (distance >= 20 && distance < 100)
         {
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
             {
@@ -128,8 +132,9 @@ public void PlayerTarget()
         healthSystem = GetComponent<HealthSystemForDummies>();
         player = GameObject.Find("Player");
         playerhealthSystem = player.GetComponent<HealthSystemForDummies>();
+        GameObject.Find("End").GetComponent<end_scrpit>().dragon_dead = true;
     }
-        void Update()
+    void Update()
         {
             if (count == 0)
             {
