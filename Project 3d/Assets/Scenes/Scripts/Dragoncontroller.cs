@@ -84,7 +84,7 @@ public class Dragoncontroller : MonoBehaviour
             Flame();
         }
 
-        else if ((distance > attackDistance && distance < 20) || acummulatedamage >= 0)  // 그 외에는 플레이어를 추적
+        else if ((distance > attackDistance && distance < 20) || acummulatedamage > 0)  // 그 외에는 플레이어를 추적
         {
             anim.SetBool("iswalk", true);
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public delegate void CmdAction();
 public class Player : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class Player : MonoBehaviour
         movement3D = GetComponent<movements>();
         playerAnimator = GetComponentInChildren<PlayerAnimator>();
      }
+    private void RestartScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
     IEnumerator WaitForIt()
     {
         attackStateType = AttackStateType.swing;
@@ -50,7 +56,7 @@ public class Player : MonoBehaviour
         attackStateType = AttackStateType.ready;
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Movement"))
         {
-            InvokeRepeating("RecoverHP", 5f, 5f);
+            InvokeRepeating("RecoverHP", 8f, 8f);
         }
     }
     public void TakeDamage(int damage, Vector3 hitDirection)
@@ -85,7 +91,7 @@ public class Player : MonoBehaviour
         if (healthSystem.CurrentHealth == 0)
         {
             anim.SetTrigger("die");
-            Destroy(gameObject, 1.2f);
+            Invoke("RestartScene", 1.2f);
         }
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
