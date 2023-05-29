@@ -20,6 +20,8 @@ public class portal : MonoBehaviour
   }
     void FixedUpdate()
     {
+        level = GameObject.Find("exp").GetComponent<fillexp>().level;
+
         if (a == 1 && move == true)
         {
             Player.position = portals.transform.position + new Vector3(0, 0, 7);
