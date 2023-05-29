@@ -26,8 +26,7 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         movement3D = GetComponent<movements>();
         playerAnimator = GetComponentInChildren<PlayerAnimator>();
-        level = GameObject.Find("exp").GetComponent<fillexp>().level;
-    }
+     }
     IEnumerator WaitForIt()
     {
         attackStateType = AttackStateType.swing;
@@ -45,6 +44,7 @@ public class Player : MonoBehaviour
     }
     void Start()
     {
+        level = GameObject.Find("exp").GetComponent<fillexp>().level;
         playerAnimator = GetComponentInChildren<PlayerAnimator>();
         healthSystem = GetComponent<HealthSystemForDummies>();
         attackStateType = AttackStateType.ready;
@@ -73,7 +73,11 @@ public class Player : MonoBehaviour
             }
         }
     }
-   
+   void FixedUpdate()
+    {
+        level = GameObject.Find("exp").GetComponent<fillexp>().level;
+
+    }
     void Update()
     {
 
