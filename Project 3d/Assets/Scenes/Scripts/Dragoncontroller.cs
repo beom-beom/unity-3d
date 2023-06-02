@@ -8,7 +8,6 @@ public class Dragoncontroller : MonoBehaviour
     public float attackDistance = 1f;  // 공격 거리
     public float attackRate = 1f;  // 공격 속도
     public float attackTimer = 0f;
-    private int count = 0;
     private Animator anim;
     private Transform playerTransform;  // 플레이어 Transform
     private DragonAnimator dragonAnimator;  // 용 애니메이터
@@ -68,25 +67,25 @@ public class Dragoncontroller : MonoBehaviour
             anim.Play("Scream");
             cmt = false;
         }
-        if (healthSystem.CurrentHealth <= 0)
-        {
-            anim.SetTrigger("die");
-                Invoke("settingbool", 2.0f);       
-            Destroy(gameObject, 2.1f);
-        }
-        else if (distance >= 20 && distance < 100)
-        {
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+            if (healthSystem.CurrentHealth <= 0)
             {
-                anim.SetBool("iswalk", false);
+                anim.SetTrigger("die");
+                Invoke("settingbool", 2.0f);
+                Destroy(gameObject, 2.1f);
             }
-            StartCoroutine(WaitForIt());
-            Flame();
-        }
+            else if (distance >= 20 && distance < 100)
+            {
+                if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+                {
+                    anim.SetBool("iswalk", false);
+                }
+                StartCoroutine(WaitForIt());
+                Flame();
+            }
 
-        else if ((distance > attackDistance && distance < 20) || acummulatedamage > 0)  // 그 외에는 플레이어를 추적
-        {
-            anim.SetBool("iswalk", true);
+            else if ((distance > attackDistance && distance < 20) || acummulatedamage > 0)  // 그 외에는 플레이어를 추적
+            {
+                anim.SetBool("iswalk", true);
 
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
                 {
@@ -96,7 +95,8 @@ public class Dragoncontroller : MonoBehaviour
                     Quaternion targetRotation = Quaternion.LookRotation(direction);  // 플레이어 방향으로 회전
                     transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
                 }
-                    if (distance <= attackDistance)  // 플레이어와 일정 거리 이내에 있으면
+            }
+             else if (distance <= attackDistance)  // 플레이어와 일정 거리 이내에 있으면
             {
                 anim.SetBool("iswalk", false);
                     dragonAnimator.OnAttack();
@@ -115,7 +115,7 @@ public class Dragoncontroller : MonoBehaviour
                     attackTimer = Time.time + 1f / attackRate;  // 다음 공격 시간을 공격 속도만큼 더해줌
                 }
             }
-        }
+        
 
     }
     else 
@@ -134,13 +134,9 @@ public class Dragoncontroller : MonoBehaviour
         playerhealthSystem = player.GetComponent<HealthSystemForDummies>();
         GameObject.Find("End").GetComponent<end_scrpit>().dragon_dead = true;
     }
-    void Update()
+    void FixedUpdate()
         {
-            if (count == 0)
-            {
-                Invoke("PlayerTarget", 3.0f);
-                count++;
-            }
+            
             PlayerTarget();
         }
     

@@ -15,7 +15,7 @@ C:/Users/vldks/unity-3d/Project 3d
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51820
+51006
 Successfully changed project path to: C:/Users/vldks/unity-3d/Project 3d
 C:/Users/vldks/unity-3d/Project 3d
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/vldks/unity-3d/Project 3d
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3432] Host "[IP] 192.168.0.183 [Port] 0 [Flags] 2 [Guid] 891715286 [EditorId] 891715286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ULA7VAQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3892] Host "[IP] 192.168.0.183 [Port] 0 [Flags] 2 [Guid] 22639126 [EditorId] 22639126 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ULA7VAQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3432] Host "[IP] 192.168.0.183 [Port] 0 [Flags] 2 [Guid] 891715286 [EditorId] 891715286 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ULA7VAQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3892] Host "[IP] 192.168.0.183 [Port] 0 [Flags] 2 [Guid] 22639126 [EditorId] 22639126 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ULA7VAQ) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 235.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 147.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.21f1 (1b156197d683)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -67,46 +67,277 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.21f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.076858 seconds.
+Registered in 0.071916 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 246.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 156.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.727 seconds
+- Completed reload, in  2.195 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2729ms)
-		BeginReloadAssembly (399ms)
+	ReloadAssembly (2196ms)
+		BeginReloadAssembly (439ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1896ms)
-			LoadAssemblies (395ms)
+			CreateAndSetChildDomain (4ms)
+		EndReloadAssembly (1147ms)
+			LoadAssemblies (436ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (360ms)
+			SetupTypeCache (235ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (1180ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (628ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (63ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (247ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (644ms)
-				ProcessInitializeOnLoadMethodAttributes (222ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (157ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (316ms)
+				ProcessInitializeOnLoadMethodAttributes (105ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.053427 seconds.
+Registered in 0.024461 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\vldks\unity-3d\Project 3d\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\vldks\unity-3d\Project 3d\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.252 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3254ms)
+		BeginReloadAssembly (349ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (2606ms)
+			LoadAssemblies (291ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (953ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (1252ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (41ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (265ms)
+				ProcessInitializeOnLoadAttributes (843ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (48ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.25 seconds
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3414 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (1.4 MB). Loaded Objects now: 3901.
+Memory consumption went from 226.7 MB to 225.4 MB.
+Total: 9.433000 ms (FindLiveObjects: 0.435600 ms CreateObjectMapping: 0.825700 ms MarkObjects: 7.662800 ms  DeleteObjects: 0.507500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 705524.997875 seconds.
+  path: Assets/Scenes/Prefabs/Teleportation Pad
+  artifactKey: Guid(52f80abac6c426240b8fc50fd5702afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Prefabs/Teleportation Pad using Guid(52f80abac6c426240b8fc50fd5702afb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197acda10c0bacb3979d2a6f6c1ebf0e') in 0.024539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.611608 seconds.
+  path: Assets/Scenes/Materials/HandPainted Lava Textures/Materials/01.mat
+  artifactKey: Guid(c262c90b10ca8734f9c612ad941e1220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Materials/HandPainted Lava Textures/Materials/01.mat using Guid(c262c90b10ca8734f9c612ad941e1220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c19a757efc619a0ba80d240448b7f0f') in 0.283904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Scenes/NPC/Western Wild West free Characters/Mesh/Characters/Male/Warrior Idle.fbx
+  artifactKey: Guid(1d2a28ee3911363489aaed0e5cf73eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NPC/Western Wild West free Characters/Mesh/Characters/Male/Warrior Idle.fbx using Guid(1d2a28ee3911363489aaed0e5cf73eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a179c3d393dce7b52a2ac3e409485bc') in 0.359658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/Materials/HandPainted Lava Textures/Materials/03.mat
+  artifactKey: Guid(7d02d22da273a1d4fa60e5a5350b9a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Materials/HandPainted Lava Textures/Materials/03.mat using Guid(7d02d22da273a1d4fa60e5a5350b9a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa5f4c97398f6464740b6ecfac2bad9') in 0.096851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlow_01.mat
+  artifactKey: Guid(ee75c46108907514eb9a0dda79a9a723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlow_01.mat using Guid(ee75c46108907514eb9a0dda79a9a723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d748d35c1b28eb9677e5ad149ac7ac3') in 0.096258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Scenes/Materials/Stylized Nature Environment/Nature/Materials/branch_tex.mat
+  artifactKey: Guid(b8e82f7625bc35e45bc5d380532fa087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Materials/Stylized Nature Environment/Nature/Materials/branch_tex.mat using Guid(b8e82f7625bc35e45bc5d380532fa087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a98e78f2e80967ced5bbeaf4e6e1da8') in 0.118701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlowBig_02.mat
+  artifactKey: Guid(fe1fcecb3183c86418fea50ed89c1c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlowBig_02.mat using Guid(fe1fcecb3183c86418fea50ed89c1c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32abe33e81b9219d56fbe0bf4ae9a285') in 0.087058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_Twinkle_01.mat
+  artifactKey: Guid(bedbbded133060941904bdc764a2a98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_Twinkle_01.mat using Guid(bedbbded133060941904bdc764a2a98e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6590eea7fd95c6b24818553cdd8debb6') in 0.086722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_NeonSwords_01.mat
+  artifactKey: Guid(48fdfe2ffecc046469bcfd0995544ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_NeonSwords_01.mat using Guid(48fdfe2ffecc046469bcfd0995544ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f7b9867a65599477bcf161ac06626c') in 0.089635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/NPC/Western Wild West free Characters/Mesh/Characters/Female/Happy Idle.fbx
+  artifactKey: Guid(992d36636a810fa4487e4cdde23372e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NPC/Western Wild West free Characters/Mesh/Characters/Female/Happy Idle.fbx using Guid(992d36636a810fa4487e4cdde23372e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09397a14be92976d3c746229e571314d') in 0.131852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_01.mat
+  artifactKey: Guid(525794ae4215fef4fa17a3309c172ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_01.mat using Guid(525794ae4215fef4fa17a3309c172ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bd5bebbfbde544a662220fe8ed42b8') in 0.110635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Scenes/Characters/RPG Tiny Hero Duo/Animation/SwordAndShield/Materials/body_0.mat
+  artifactKey: Guid(03f56ccd30ad2054aab8ffd85f7f82d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/RPG Tiny Hero Duo/Animation/SwordAndShield/Materials/body_0.mat using Guid(03f56ccd30ad2054aab8ffd85f7f82d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06c9b5828706eaf0474b09f0c2b3305') in 0.199302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlowBig_02.mat
+  artifactKey: Guid(bc78170f27e5a82438cef4588e7060a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlowBig_02.mat using Guid(bc78170f27e5a82438cef4588e7060a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f33f3c71619c0b0a835cb4dcbc9eb55') in 0.123195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointBlur_02.mat
+  artifactKey: Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointBlur_02.mat using Guid(98cc821a6b46e7c488562c8df10ed5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7cd051606028ab9f86c58a7aee24e82') in 0.143872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointBlur_01.mat
+  artifactKey: Guid(4ec40d363a9d8e1488ed1143853f26f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointBlur_01.mat using Guid(4ec40d363a9d8e1488ed1143853f26f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c90f3d0d7e495cdbb319bb3086136e3a') in 0.118068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/NPC/Western Wild West free Characters/Materials/2.mat
+  artifactKey: Guid(32cb36cac2c915e48b441602cec49a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NPC/Western Wild West free Characters/Materials/2.mat using Guid(32cb36cac2c915e48b441602cec49a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4e08452ac14f883365f6819096bfc9') in 0.089877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Scenes/Materials/HandPainted Lava Textures/Materials/04.mat
+  artifactKey: Guid(e054df7fe20dcd241b757ce007d6674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Materials/HandPainted Lava Textures/Materials/04.mat using Guid(e054df7fe20dcd241b757ce007d6674f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d2558908841309663297930c32cd9d') in 0.118579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_Trail_01.mat
+  artifactKey: Guid(878e68b0aec86b142bce3ec72232b02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_Trail_01.mat using Guid(878e68b0aec86b142bce3ec72232b02f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa333bed52608e3c16c774ee93815a1') in 0.090382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlowBig_01.mat
+  artifactKey: Guid(24eb078c0d78e0745adf0cbe6f126378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlowBig_01.mat using Guid(24eb078c0d78e0745adf0cbe6f126378) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bd6ecef763adfa029bcc73ed6501e9') in 0.089789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat
+  artifactKey: Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_01a_PointGlowBig_01.mat using Guid(5325e645a67a91b4b9f371dc035969c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d2e30025aadda31ad8cd31aca7c6da') in 0.088484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_Twinkle_01.mat
+  artifactKey: Guid(72843f682d8127544b2a0ef943733222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_Twinkle_01.mat using Guid(72843f682d8127544b2a0ef943733222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90c98e13fff63c4e8037f04844a3996d') in 0.091712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/NPC/Western Wild West free Characters/Materials/1.mat
+  artifactKey: Guid(399ddc0e13131284ba2874d7dd01f95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NPC/Western Wild West free Characters/Materials/1.mat using Guid(399ddc0e13131284ba2874d7dd01f95c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7f62d7a736b8564085843a095bda6f') in 0.113418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_03.mat
+  artifactKey: Guid(10007fe39aa499b4e9f1cac19796d69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_03.mat using Guid(10007fe39aa499b4e9f1cac19796d69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f07238f88114cae272091af5d9335b') in 0.086600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_Trail_01.mat
+  artifactKey: Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_Trail_01.mat using Guid(fc18349e16804e245945431f9ad07cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee182e15d0118cbf100defe5c0451de4') in 0.106656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlow_01.mat
+  artifactKey: Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlow_01.mat using Guid(b533c019761eb994a8718bbd549244f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13301b8480d3043bbbb32281b650c37') in 0.118619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_02.mat
+  artifactKey: Guid(04ae3df6e6b9cfa47906d2073e94b54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_02a_PointGlowBig_02.mat using Guid(04ae3df6e6b9cfa47906d2073e94b54e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fba3b22d8678b39db38a6b0ce443c6') in 0.093546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Scenes/Materials/HandPainted Lava Textures/Materials/02.mat
+  artifactKey: Guid(745b04538c7c0a740b168e1c106307ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Materials/HandPainted Lava Textures/Materials/02.mat using Guid(745b04538c7c0a740b168e1c106307ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7809c6fba4ef0922121a1e98bb7b4014') in 0.122693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlow_01.mat
+  artifactKey: Guid(acbc8d78b0831b2458c6c1631b6d9635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Characters/Status Effects/Materials/Buff_03a_PointGlow_01.mat using Guid(acbc8d78b0831b2458c6c1631b6d9635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ebe5eee287f61c93675baa57592453') in 0.122527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat
+  artifactKey: Guid(094e76e620df5714eb3946120657e1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat using Guid(094e76e620df5714eb3946120657e1f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7491053ee212b934dbdbbb1f67a9d6d') in 0.191751 seconds 

@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     {
 
         
-        if (healthSystem.CurrentHealth == 0)
+        if (healthSystem.CurrentHealth <= 0)
         {
             anim.SetTrigger("die");
             Invoke("RestartScene", 1.2f);
@@ -129,14 +129,11 @@ public class Player : MonoBehaviour
         }
         if (Input.GetButton("dodge"))
         {
-            movement3D.moveSpeed *= 7;
+            movement3D.moveSpeed *= 2;
             playerAnimator.OnDodge();
             movement3D.moveSpeed *= 0.5f;
         }
-        else
-        {
-            anim.SetBool("Dodge", false);
-        }
+       
         if (level > 2)
         {
             if (Input.GetMouseButtonDown(1))

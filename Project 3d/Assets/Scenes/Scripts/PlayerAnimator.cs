@@ -38,6 +38,6 @@ public class PlayerAnimator : MonoBehaviour
     }
     public void OnDodge()
     {
-        animator.SetBool("Dodge",true);      
+        animator.SetTrigger("Dodge");      
     }
 }
