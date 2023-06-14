@@ -129,7 +129,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetButton("dodge"))
         {
-            movement3D.moveSpeed *= 2;
+            movement3D.moveSpeed *= 6;
             playerAnimator.OnDodge();
             movement3D.moveSpeed *= 0.5f;
         }

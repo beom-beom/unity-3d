@@ -5079,7 +5079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2745362524069802042, guid: 12920e817cd7cc74dba0ebb1828a8b2f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 440
+      value: -555
       objectReference: {fileID: 0}
     - target: {fileID: 2745362524069802042, guid: 12920e817cd7cc74dba0ebb1828a8b2f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5548,11 +5548,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2432255107486819086, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
       propertyPath: CurrentHealth
-      value: 10
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2432255107486819086, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
       propertyPath: MaximumHealth
-      value: 10
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2432255107486819086, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
       propertyPath: OnCurrentHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5642,9 +5642,17 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6746854721482645259, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6746854721482645303, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6746854721482645303, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
       propertyPath: attackDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6746854721482645303, guid: 6d2d66c52789baf488d480f62c276e84, type: 3}
       propertyPath: particleObject

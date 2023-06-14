@@ -30,6 +30,8 @@ public class Dragoncontroller : MonoBehaviour
     }
     private void Flame()
     {
+
+        anim.SetBool("iswalk", false);
         dragonAnimator.OnFlame();
         particleObject.Play();
         Vector3 direction = (playerTransform.position - transform.position).normalized;  // 플레이어 방향으로 이동
@@ -70,22 +72,19 @@ public class Dragoncontroller : MonoBehaviour
             if (healthSystem.CurrentHealth <= 0)
             {
                 anim.SetTrigger("die");
-                Invoke("settingbool", 2.0f);
-                Destroy(gameObject, 2.1f);
+                Invoke("settingbool", 4.0f);
+                Destroy(gameObject, 4.1f);
             }
             else if (distance >= 20 && distance < 100)
             {
-                if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
-                {
-                    anim.SetBool("iswalk", false);
-                }
+                
                 StartCoroutine(WaitForIt());
                 Flame();
             }
 
-            else if ((distance > attackDistance && distance < 20) || acummulatedamage > 0)  // 그 외에는 플레이어를 추적
+            else if ( distance < 20 || acummulatedamage > 0)  // 그 외에는 플레이어를 추적
             {
-                anim.SetBool("iswalk", true);
+                anim.SetBool("iswalk",true);
 
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
                 {
@@ -95,10 +94,10 @@ public class Dragoncontroller : MonoBehaviour
                     Quaternion targetRotation = Quaternion.LookRotation(direction);  // 플레이어 방향으로 회전
                     transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
                 }
-            }
-             else if (distance <= attackDistance)  // 플레이어와 일정 거리 이내에 있으면
-            {
-                anim.SetBool("iswalk", false);
+                if (distance <= attackDistance)  // 플레이어와 일정 거리 이내에 있으면
+                {
+                    anim.SetBool("iswalk", false);
+
                     dragonAnimator.OnAttack();
 
                     Vector3 directions = playerTransform.position - transform.position;
@@ -111,12 +110,12 @@ public class Dragoncontroller : MonoBehaviour
                     float rotationSpeed = 5f; // 회전 속도 조절을 위한 변수
                     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotations, rotationSpeed * Time.deltaTime);
                     if (Time.time > attackTimer)  // 공격 속도만큼 시간이 지났으면
-                {
-                    attackTimer = Time.time + 1f / attackRate;  // 다음 공격 시간을 공격 속도만큼 더해줌
+                    {
+                        attackTimer = Time.time + 1f / attackRate;  // 다음 공격 시간을 공격 속도만큼 더해줌
+                    }
                 }
             }
-        
-
+            
     }
     else 
     {
